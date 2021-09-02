@@ -8,4 +8,4 @@ app.get('/books', (req, res) => {
   return res.json({ message: 'Olá mundo' })
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
